@@ -1,0 +1,30 @@
+{
+  "name": "cordova-plugin-lifecycle-events-extra",
+  "version": "1.0.0",
+  "description": "Cordova Plugin for Extra App Lifecycle Events, including Terminate and Destroy",
+  "cordova": {
+    "id": "cordova-plugin-lifecycle-events-extra",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mgatto/cordova-plugin-lifecycle-events-extra"
+  },
+  "keywords": [
+    "cordova",
+    "destroy",
+    "lifecycle",
+    "event",
+    "exit",
+    "terminate",
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-ios"
+  ],
+  "author": "Michael Gatto",
+  "license": "MIT",
+  "homepage": "https://github.com/mgatto/cordova-plugin-lifecycle-events-extra#readme"
+}
