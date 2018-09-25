@@ -14,7 +14,7 @@ Similar plugins which may better meet one's requirements include:
 
 ## Installation
 
-`cordova plugin install cordova-plugin-lifecycle-events-extra`
+`cordova plugin add cordova-plugin-lifecycle-events-extra`
 
 Warning! You should not call any interactive Javascript in the event handler!
 This includes `alert()` and any other interaction with the user. Ensure that
