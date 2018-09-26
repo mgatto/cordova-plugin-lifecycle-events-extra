@@ -25,19 +25,22 @@ Otherwise, AJAX calls, for example, will not work.
 
 ## Usage
 
-After the deviceready event has fired, add these event listeners, too:
+Only after the `deviceready` event has fired, add these event listeners within the deviceready handler's function body:
 
 ### iOS
 
 ```javascript
-document.addEventListener('willterminate', function () {
-	/* iOS cordova quirk */
-    setTimeout(function() {
-	    console.log('terminate event has fired.');
-        // more JS here!
-   }, 0);
+ document.addEventListener("deviceready", function (event1) {
 
-});
+	 document.addEventListener('willterminate', function (event2) {
+		/* iOS cordova quirk */
+	    setTimeout(function() {
+		    console.log('terminate event has fired.');
+	        // more JS here!
+	   }, 0);
+	});
+	
+ }, false);
 ```
 
 ### Android
