@@ -23,11 +23,18 @@ your handler is "headless".
 In your JS event handler, you should strong consider wrapping your JS code in setTimeout.
 Otherwise, AJAX calls, for example, will not work.
 
+## Included Additional Lifecycle Events
+
+* willterminate = (UIApplicationWillTerminateNotification)[]
+* didlaunch = (UIApplicationDidFinishLaunchingNotification)[https://developer.apple.com/documentation/uikit/uiapplicationdidfinishlaunchingnotification?language=objc]
+
 ## Usage
 
 Only after the `deviceready` event has fired, add these event listeners within the deviceready handler's function body:
 
 ### iOS
+
+Warning! iOS does not broadcast any event upon termination when the app is already in the background!
 
 ```javascript
  document.addEventListener("deviceready", function (event1) {
@@ -39,7 +46,7 @@ Only after the `deviceready` event has fired, add these event listeners within t
 	        // more JS here!
 	   }, 0);
 	});
-	
+
  }, false);
 ```
 
